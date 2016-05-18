@@ -42,9 +42,9 @@ Unplugging a consumer with an inductive load or a high current flow will result 
 
 Wireless: NRF24L01+ or WiFi with ESP8266
 
-### Display
+### Optional Display
 
-Small OLED.
+Small OLED
 
 ## Faults and Errors
 
