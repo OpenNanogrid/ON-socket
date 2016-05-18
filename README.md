@@ -20,11 +20,11 @@ Needed for precise ADC measurements. 2.56V?
 
 3. SMD/THT resistor. Inexpensive but rather large for a high current rating. No calibration needed.
 
+4. Integrated hall effect sensor, e.g. Allegro ACS712. Good efficiency. High price. Sourcing and sinking will both be covered (still needs antiparallel MOSFETs though).
+
 ADCs with integrated amps:
 ADS1115: 16bit 4channel 8-800sps ADC with 16x PGA, i2c, differential mode
 HX711: 24bit (less than 20bit usable) i2c ADC with amplifier, commonly used in weight scales
-
-4. Integrated hall effect sensor, e.g. Allegro ACS712. Good efficiency. High price. Sourcing and sinking will both be covered (still needs antiparallel MOSFETs though).
 
 ### Voltage Sensing
 
@@ -48,7 +48,7 @@ Small OLED
 
 ## Faults and Errors
 
-Overload: Hiccup pattern with recovery time depending on input voltage drop.
-Short Circuit: Switch output off. Probe current for 1ms every 500ms. Activate output again if current is below threshhold. Needs a more sophisticated algorithm for plug-in events when input capacitors are charged, soft start could be implemented with PWM.
-Polyfuse?
-Diode over output against back-EMF.
+1. Overload: Hiccup pattern with recovery time depending on input voltage drop.
+1. Short Circuit: Switch output off. Probe current for 1ms every 500ms. Activate output again if current is below threshhold. Needs a more sophisticated algorithm for plug-in events when input capacitors are charged, soft start could be implemented with PWM.
+1. Polyfuse? 
+1. Diode over output against back-EMF.
