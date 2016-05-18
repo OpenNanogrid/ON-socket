@@ -34,6 +34,18 @@ Via high impedance voltage divider into ADC: input voltage, output voltage.
 
 Unplugging a consumer with an inductive load or a high current flow will result in arcing. Can this event be mitigated? How to identify arcing? The resulting plasma will be a large voltage drop right at the plug.
 
+### Micro Controller
+
+8bit with integrated ADC should be sufficient. ESP8266 with integrated WiFi is inexpensive but has high power demands.
+
+### Communication
+
+Wireless: NRF24L01+ or WiFi with ESP8266
+
+### Display
+
+Small OLED.
+
 ## Faults and Errors
 
 Overload: Hiccup pattern with recovery time depending on input voltage drop.
