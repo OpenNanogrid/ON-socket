@@ -20,11 +20,12 @@ Needed for precise ADC measurements. 2.56V?
 
 3. SMD/THT resistor. Inexpensive but rather large for a high current rating. No calibration needed.
 
-4. Integrated hall effect sensor, e.g. Allegro ACS712. Good efficiency. High price. Sourcing and sinking will both be covered (still needs antiparallel MOSFETs though).
+4. Integrated hall effect sensor, e.g. Allegro ACS712. Good efficiency. High price. Sourcing and sinking will both be covered (still needs antiparallel MOSFETs though). (heavy idle: 5V supply, 10mA Iq)
 
 ADCs with integrated amps:
-ADS1115: 16bit 4channel 8-800sps ADC with 16x PGA, i2c, differential mode
-HX711: 24bit (less than 20bit usable) i2c ADC with amplifier, commonly used in weight scales
+INA220: 12bit Bi-Directional, Zero-Drift, Low- or High-Side, I2C Out Current/Power Monitor, max 26V bus voltage. 1mA Iq
+ADS1115: 16bit 4channel 8-800sps ADC with 16x PGA, i2c, differential mode, 150µA Iq
+HX711: 24bit (less than 20bit usable) i2c ADC with amplifier, commonly used in weight scales, 1.5mA Iq
 
 ### Voltage Sensing
 
