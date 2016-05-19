@@ -1,6 +1,8 @@
 # ON-socket
 Drafts for a smart Extra Low Voltage Direct Current (ELVDC) socket.
 
+![]({{site.baseurl}}/cad/Wall%20Socket%20v4%20explode%20raytraced.png)
+
 ## Components
 
 ### Voltage Reference
