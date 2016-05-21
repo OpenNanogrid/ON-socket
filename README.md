@@ -49,6 +49,8 @@ Wireless: NRF24L01+ or WiFi with ESP8266
 
 Small OLED
 
+![](/cad/Wall Socket v4 raytraced.png)
+
 ## Faults and Errors
 
 1. Overload: Hiccup pattern with recovery time depending on input voltage drop.
@@ -56,7 +58,6 @@ Small OLED
 1. Polyfuse? 
 1. Diode over output against back-EMF.
 
-![](/cad/Wall Socket v4 raytraced.png)
 ![](/cad/Wall Socket v4 inside.png)
 ![](/cad/Wall Socket v4 side2.png)
 ![](/cad/Wall Socket v4 front2.png)
