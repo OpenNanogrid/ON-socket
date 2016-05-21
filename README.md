@@ -55,3 +55,8 @@ Small OLED
 1. Short Circuit: Switch output off. Probe current for 1ms every 500ms. Activate output again if current is below threshhold. Needs a more sophisticated algorithm for plug-in events when input capacitors are charged, soft start could be implemented with PWM.
 1. Polyfuse? 
 1. Diode over output against back-EMF.
+
+![](/cad/Wall Socket v4 raytraced.png)
+![](/cad/Wall Socket v4 inside.png)
+![](/cad/Wall Socket v4 side2.png)
+![](/cad/Wall Socket v4 front2.png)
