@@ -11,8 +11,15 @@ Needed for precise ADC measurements. 2.56V?
 
 ### Switching
 
-1. n-channel MOSFET switching the negative rail, while a common conductor is tied to the positive rail and possibly earth grounded. This will reduce the overhead for gate drivers, charge pumps or p-channel mosfets as switches. What are the downsides to this approach?
+1. n-channel MOSFET switching the negative rail, while a common conductor is tied to the positive rail and possibly earth grounded. This will reduce the overhead for gate drivers, charge pumps or p-channel mosfets as switches. What are the downsides to this approach? Voltage sensing will be difficult as the MCU and ADC will be tied at the low side, not floating. A differential sensing with a common voltage higher than the maximum bus voltage is needed.
+
 2. p-channel MOSFET on positive rail. More expensive, Rds worse, but common GND at 0V.
+
+potential MOSFETs:
+
+	n-Channel
+		CSD18540Q5B
+        
 
 ### Current Sensing
 
@@ -41,9 +48,15 @@ Unplugging a consumer with an inductive load or a high current flow will result 
 
 8bit with integrated ADC should be sufficient. ESP8266 with integrated WiFi is inexpensive but has high power demands.
 
+### Power Supply
+
+For logic power a low Iq buck converter. Best with synchronous rectification, few external parts.  Potential candidates: TPS54061 (0.09 mA), LM5156 (0.01 mA), LM5009A (0.5 mA), all types up to 60 Vin and about 150mA output.
+If the n-channel MOSFET is switched at the high side a gate driver is needed. Power supply for the gate driver can be derived from the 3.3 V logic power if the gate driver can bootstrap it's high potential from that. Although a driver might charge and discharge the FET gate with 1..2A, the charge time is sufficiently low and can be buffered by caps. For a very low switching frequency (ie. using the FET as a power switch) this is fine. When the FET is used to throttle the output (e.g. via BAM / bit ampltitude modulation), the gate driver needs more power.
+
 ### Communication
 
 Wireless: NRF24L01+ or WiFi with ESP8266
+However, everything should be passive first and work plug and play without having a communication channel. 
 
 ### Optional Display
 
