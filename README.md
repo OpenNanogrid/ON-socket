@@ -18,12 +18,14 @@ Needed for precise ADC measurements. 2.56V?
 Potential MOSFETs:
 
 	n-Channel
-	CSD18540Q5B, 2.0 mOhm Rds
-    CSD18542KTT, 4.0 mOhm Rds
+	CSD18540Q5B, 2.0 mOhm Rds, SMD
+    CSD18542KTT, 4.0 mOhm Rds, SMD
+    IRFP4310Z, 4.8 mOhm Rds, TO-247AC
+    IRF3205, 8 mOhm Rds, TO-220, cheap
         
 Potential gate drivers:
 
-	LM5109B-Q1
+	LM5109B, cheap but high Iq and needs 8V supply and external bootstrap diode.
 
 ### Current Sensing
 
