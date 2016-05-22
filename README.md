@@ -19,13 +19,14 @@ Potential MOSFETs:
 
 	n-Channel
     IRFS7530-7PPbF, 1.15 mOhm, 60V
-    FDMT80060DC, 1.1 mOhm Rds, SMD, 60V
+    FDMT80060DC, 1.1 mOhm Rds, 60V
+    NTMFS5C604NLT1G, 1.2 mOhm Rds, 60V
     IRLS3036-7PPbF, 1.5 mOhm, 60V
     IRFS7730-7PPbF, 1.7 mOhm, 75V
-	CSD18540Q5B, 2.0 mOhm Rds, SMD, 60V
-    STH315N10F7-2 2.1 mOhm Rds, SMD, 100V
-    CSD18542KTT, 4.0 mOhm Rds, SMD, 60V
-    CSD19502Q5B, 4.0 mOhm Rds, SMD, 60V
+	CSD18540Q5B, 2.0 mOhm Rds, 60V
+    STH315N10F7-2 2.1 mOhm Rds, 100V
+    CSD18542KTT, 4.0 mOhm Rds, 60V
+    CSD19502Q5B, 4.0 mOhm Rds, 60V
     IRFP4310Z, 4.8 mOhm Rds, TO-247AC
     IRF3205, 8 mOhm Rds, TO-220, cheap
         
