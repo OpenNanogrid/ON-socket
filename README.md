@@ -15,13 +15,15 @@ Needed for precise ADC measurements. 2.56V?
 
 2. p-channel MOSFET on positive rail. More expensive, Rds worse, but common GND at 0V.
 
-potential MOSFETs:
+Potential MOSFETs:
 
-n-Channel
+	n-Channel
 	CSD18540Q5B, 2.0 mOhm Rds
     CSD18542KTT, 4.0 mOhm Rds
         
-Gate drivers: LM5109B-Q1
+Potential gate drivers:
+
+	LM5109B-Q1
 
 ### Current Sensing
 
