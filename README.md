@@ -26,8 +26,10 @@ Potential MOSFETs:
         
 Potential gate drivers:
 
-	LM5109B, cheap but high Iq and needs 8V supply and external bootstrap diode.
+	LM5109B, external bootstrap diode, $0.60
     LM27222, low Iq but max 30V
+    TPS7A6350-Q1, 10µA Iq,
+    UCC27201A-Q1, 1µA Iq, 120V, $1.60 
 
 ### Current Sensing
 
@@ -59,7 +61,7 @@ Unplugging a consumer with an inductive load or a high current flow will result 
 ### Power Supply
 
 For logic power a low Iq buck converter. Best with synchronous rectification, few external parts.  Potential candidates: TPS54061 (0.09 mA), LM5156 (0.01 mA), LM5009A (0.5 mA), all types up to 60 Vin and about 150mA output.
-If the n-channel MOSFET is switched at the high side a gate driver is needed. Power supply for the gate driver needs a separate 10V rail. An LM5007 (or an alternative with integrated synchronous rectification) can be used to form a step down converter to 10V. This step down converter should be shut down with a GPIO pin from the MCU if no load is present, so it needs an enable input.
+If the n-channel MOSFET is switched at the high side a gate driver is needed. Power supply for the gate driver needs a separate 10V rail. An LM5007, LM5010 (or an alternative with integrated synchronous rectification and enable input) can be used to form a step down converter to 10V. This step down converter should be shut down with a GPIO pin from the MCU if no load is present, so it needs an enable input.
 Although a driver might charge and discharge the FET gate with 1..2A, the charge time is sufficiently low and can be buffered by caps. For a very low switching frequency (ie. using the FET as a power switch) this is fine. When the FET is used to throttle the output (e.g. via BAM / bit ampltitude modulation), the gate driver needs more power.
 
 
