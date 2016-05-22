@@ -26,6 +26,7 @@ Potential MOSFETs:
 Potential gate drivers:
 
 	LM5109B, cheap but high Iq and needs 8V supply and external bootstrap diode.
+    LM27222, low Iq but max 30V
 
 ### Current Sensing
 
