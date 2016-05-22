@@ -20,6 +20,7 @@ Potential MOSFETs:
 	n-Channel
 	CSD18540Q5B, 2.0 mOhm Rds, SMD
     CSD18542KTT, 4.0 mOhm Rds, SMD
+    CSD19502Q5B, 4.0 mOhm Rds, SMD
     IRFP4310Z, 4.8 mOhm Rds, TO-247AC
     IRF3205, 8 mOhm Rds, TO-220, cheap
         
@@ -58,7 +59,9 @@ Unplugging a consumer with an inductive load or a high current flow will result 
 ### Power Supply
 
 For logic power a low Iq buck converter. Best with synchronous rectification, few external parts.  Potential candidates: TPS54061 (0.09 mA), LM5156 (0.01 mA), LM5009A (0.5 mA), all types up to 60 Vin and about 150mA output.
-If the n-channel MOSFET is switched at the high side a gate driver is needed. Power supply for the gate driver can be derived from the 3.3 V logic power if the gate driver can bootstrap it's high potential from that. Although a driver might charge and discharge the FET gate with 1..2A, the charge time is sufficiently low and can be buffered by caps. For a very low switching frequency (ie. using the FET as a power switch) this is fine. When the FET is used to throttle the output (e.g. via BAM / bit ampltitude modulation), the gate driver needs more power.
+If the n-channel MOSFET is switched at the high side a gate driver is needed. Power supply for the gate driver needs a separate 10V rail. An LM5007 (or an alternative with integrated synchronous rectification) can be used to form a step down converter to 10V. This step down converter should be shut down with a GPIO pin from the MCU if no load is present, so it needs an enable input.
+Although a driver might charge and discharge the FET gate with 1..2A, the charge time is sufficiently low and can be buffered by caps. For a very low switching frequency (ie. using the FET as a power switch) this is fine. When the FET is used to throttle the output (e.g. via BAM / bit ampltitude modulation), the gate driver needs more power.
+
 
 ### Communication
 
