@@ -18,7 +18,7 @@ Needed for precise ADC measurements. 2.56V?
 Potential MOSFETs:
 
 	n-Channel
-	Name, Rds, Vds
+	Name, Rds, Vds, Remark/Price
     IRFS7530-7PPbF, 1.15 mOhm, 60V
     FDMT80060DC, 1.1 mOhm Rds, 60V
     NTMFS5C604NLT1G, 1.2 mOhm, 60V
