@@ -18,9 +18,12 @@ Needed for precise ADC measurements. 2.56V?
 Potential MOSFETs:
 
 	n-Channel
-	CSD18540Q5B, 2.0 mOhm Rds, SMD
-    CSD18542KTT, 4.0 mOhm Rds, SMD
-    CSD19502Q5B, 4.0 mOhm Rds, SMD
+    
+    FDMT80060DC, 1.1 mOhm Rds, SMD, 60V
+	CSD18540Q5B, 2.0 mOhm Rds, SMD, 60V
+    STH315N10F7-2 2.1 mOhm Rds, SMD, 100 V
+    CSD18542KTT, 4.0 mOhm Rds, SMD, 60V
+    CSD19502Q5B, 4.0 mOhm Rds, SMD, 60V
     IRFP4310Z, 4.8 mOhm Rds, TO-247AC
     IRF3205, 8 mOhm Rds, TO-220, cheap
         
