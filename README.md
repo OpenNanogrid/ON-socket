@@ -1,7 +1,7 @@
 # ON-socket
 Drafts for a smart Extra Low Voltage Direct Current (ELVDC) socket.
 
-![](/cad/Wall Socket v4 raytraced2.png)
+![](/cad/renders/Wall Socket v4 raytraced2.png)
 
 ## Components
 
@@ -82,7 +82,7 @@ However, everything should be passive first and work plug and play without havin
 
 Small OLED
 
-![](/cad/Wall Socket v4 raytraced.png)
+![](/cad/renders/Wall Socket v4 raytraced.png)
 
 ## Faults and Errors
 
@@ -91,6 +91,6 @@ Small OLED
 1. Polyfuse? 
 1. Diode over output against back-EMF.
 
-![](/cad/Wall Socket v4 inside.png)
-![](/cad/Wall Socket v4 side2.png)
-![](/cad/Wall Socket v4 front2.png)
+![](/cad/renders/Wall Socket v4 inside.png)
+![](/cad/renders/Wall Socket v4 side2.png)
+![](/cad/renders/Wall Socket v4 front2.png)
