@@ -38,6 +38,7 @@ Potential gate drivers:
     LM27222, low Iq but max 30V
     TPS7A6350-Q1, 10µA Iq,
     UCC27201A-Q1, 1µA Iq, 120V, $1.60 
+    MIC4605
 
 ### Current Sensing
 
